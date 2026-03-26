@@ -1,0 +1,21 @@
+# Dépendances Node.js
+node_modules/
+
+# Variables d'environnement
+.env
+.env.local
+
+# Système Windows
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Flutter/Dart
+clientPokemon/.dart_tool/
+clientPokemon/build/
+clientPokemon/.flutter-plugins
+clientPokemon/.flutter-plugins-dependencies
+

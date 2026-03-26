@@ -1,0 +1,68 @@
+openapi: 3.0.4
+info:
+  title: Pokemon API
+  version: 1.0.0
+  description: Projet-295 - API Pokemon
+
+servers:
+  - url: http://localhost:3000
+    description: Le serveur de développement
+
+components:
+  schemas:
+    Pokemons:
+      type: object
+      properties: 
+        id:
+          type: number
+        name:
+          type: string
+        types:
+          type: array
+        abilities: 
+          type: array
+        height:
+          type: number
+        weight:
+          type: number
+        baseExperience:
+          type: number
+        stats:
+          type: object
+        evolution:
+          type: object
+        sprites: 
+          type: object
+        metadata:
+          type: object
+      required: [id, name, types, abilities,height, weight, baseExperience, stats, evolution, sprites, metadata]
+
+tags:
+  - name: Pokemon
+    description: Gestion des Pokemons
+
+paths:
+  /pokemons:
+    get:
+      summary: Récupérer la liste de tous les pokemons
+      tags: [Pokemon]
+      responses:
+        "200":
+          description: Succès - La liste est récupérer ou liste vide
+  /pokemons/{id}:
+    get:
+      summary: Rechercher un pokemon selon son id
+      tags: [Pokemon]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: 
+            type: string
+          description: L'id du pokemon à rechercher
+          example: 699d4686a3a24d8416c3a2d1
+      responses:
+        "200":
+          description: pokemon trouvé
+        "500":
+          description: Le pokemon n'est pas trouvé ou l'id est invalide
