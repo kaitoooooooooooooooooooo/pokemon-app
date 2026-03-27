@@ -1,13 +1,23 @@
 # 🔴 NeoDex — Pokémon App
 
-## App preview
+## 📱 App Preview
 
-![Home](screenshots/home.png "Home")
-![Info](screenshots/info1.png "Info")
-![Info](screenshots/info2.png "Info")
-![Random](screenshots/random1.png "Random")
-![Random](screenshots/random2.png "Random")
-![Pokedex](screenshots/pokedex.png "Pokedex")
+<div align="center">
+
+  <table>
+    <tr>
+      <td><img src="screenshots/home.png" width="250"/></td>
+      <td><img src="screenshots/info1.png" width="250"/></td>
+      <td><img src="screenshots/info2.png" width="250"/></td>
+    </tr>
+    <tr>
+      <td><img src="screenshots/random1.png" width="250"/></td>
+      <td><img src="screenshots/random2.png" width="250"/></td>
+      <td><img src="screenshots/pokedex.png" width="250"/></td>
+    </tr>
+  </table>
+
+</div>
 
 > A full-stack Pokémon application built with Flutter & Node.js.  
 > Browse all 1025 Pokémons, discover their Shiny forms, search by name/type/ID, manage your personal Pokédex and get a random Pokémon!
